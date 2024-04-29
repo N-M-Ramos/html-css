@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas Grandes</title>
+    <style>
+
+        table{
+            width: 500px;
+            height: 50px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--Anatomia para tabelas grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Distrito</th>
+                <th>Habitantes</th>
+                <th>% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Lisboa</th>
+                <th>2 301 904</th>
+                <th>21,9 %</th>
+            </tr>
+            <tr>
+                <th>Porto</th>
+                <th>1 819 515</th>
+                <th>17,3 %</th>
+            </tr>
+            <tr>
+                <th>Setúbal</th>
+                <th>887 928</th>
+                <th>8,4 %</th>
+            </tr>
+            <tr>
+                <th>Braga</th>
+                <th>854 416</th>
+                <th>8,1 %</th>
+            </tr>
+            <tr>
+                <th>Aveiro</th>
+                <th>712 995</th>
+                <th>6,8 %</th>
+            </tr>
+            <tr>
+                <th>Faro</th>
+                <th>472 000</th>
+                <th>4,5 %</th>
+            </tr>
+            <tr>
+                <th>Leiria</th>
+                <th>467 139</th>
+                <th>4,4 %</th>
+            </tr>
+            <tr>
+                <th>Santarém</th>
+                <th>433 782</th>
+                <th>4,1 %</th>
+            </tr>
+            <tr>
+                <th>Coimbra</th>
+                <th>411 450</th>
+                <th>3,9 %</th>
+            </tr>
+            <tr>
+                <th>Viseu</th>
+                <th>362 040</th>
+                <th>3,4 %</th>
+            </tr>
+            <tr>
+                <th>Madeira</th>
+                <th>253 259</th>
+                <th>2,4 %</th>
+            </tr>
+            <tr>
+                <th>Açores</th>
+                <th>239 942</th>
+                <th>2,3 %</th>
+            </tr>
+            <tr>
+                <th>Viana do Castelo</th>
+                <th>232 220</th>
+                <th>2,2 %</th>
+            </tr>
+            <tr>
+                <th>Vila Real</th>
+                <th>184 525</th>
+                <th>1,7 %</th>
+            </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <th><strong>10 467 366</strong></th>
+                
+            </tr>    
+        </tfoot>
+    </table>
+</body>
+</html>
