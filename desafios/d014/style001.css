@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: darkgrey;
+    color: white;
+}
+
+th.disciplina {
+    background-color: white;
+    color: black;
+}
+
+th.media {
+    text-align: left;
+}
+
+td.medias {
+    background-color: darkgrey;
+    color: white;
+    
+}
+
