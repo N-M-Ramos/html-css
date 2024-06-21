@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários Select, datalist e textarea</h1>
+    <form action="registo.php" method="get" autocomplete="on">
+        <p>
+            <label for="idistrito">Distrito:</label>
+            <select name="distrito" id="idistrito">
+                
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Zona Norte">
+                    <option value="VN">Viana do Castelo</option>
+                    <option value="VR">Vila Real</option>
+                    <option value="PT">Porto</option>
+                </optgroup>
+                
+                <optgroup label="Zona Centro">
+                    <option value="CB">Castelo Branco</option>
+                    <option value="PB">Pombal</option>
+                    <option value="PS">Pampilhosa da Serra</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+               <option value="ADM">Administrador</option>
+               <option value="CONT">Contabilista</option>
+               <option value="DEV">Desenvolvedor</option>
+               <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="img" cols="30" rows="10" placeholder="A tua mensagem"></textarea>
+        </p>
+        <!-- O placeholder já funciona no textarea 21/06/24 -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
